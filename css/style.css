@@ -32,6 +32,10 @@ html {
   font-family: "Satoshi", sans-serif;
 }
 
+body {
+  background-color: rgba(30, 30, 30, 0.1176470588);
+}
+
 .btn {
   font-family: "Satoshi", sans-serif;
   font-size: 1.4rem;
@@ -68,6 +72,17 @@ html {
   background: var(--color-gray-7);
   min-height: 90vh;
   display: flex;
+}
+@media screen and (max-width: 62.5em) {
+  .container {
+    margin: 0;
+    min-height: 100vh;
+  }
+}
+@media screen and (max-width: 37.5em) {
+  .container {
+    flex-direction: column;
+  }
 }
 
 .brand {
@@ -193,6 +208,7 @@ html {
   top: 1.5rem;
   width: 2rem;
   height: 2rem;
+  cursor: pointer;
 }
 
 .term {
@@ -200,14 +216,30 @@ html {
   color: var(--color-gray-3);
   font-size: 1.4rem;
 }
+@media screen and (max-width: 37.5em) {
+  .term {
+    margin-top: 4rem;
+  }
+}
 .term__text {
   display: flex;
   justify-content: space-evenly;
   font-size: inherit;
 }
+@media screen and (max-width: 37.5em) {
+  .term__text {
+    justify-content: center;
+  }
+}
 .term__link {
   text-decoration: none;
   color: var(--color-gray-3);
+}
+@media screen and (max-width: 37.5em) {
+  .term__link {
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
 }
 
 .signin__text {

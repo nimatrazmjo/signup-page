@@ -14,6 +14,12 @@
 }
 
 
+$bp-largest: 62.5em; // 1000px
+$bp-large: 56.25em; // 900px
+$bp-medium: 37.5em; // 600px
+$bp-small: 31.25em; // 500px
+
+
 * {
     padding: 0;
     margin: 0;
@@ -33,6 +39,10 @@
     box-sizing: border-box;
     font-size: 62.5%; //1rem = 10px; 10px we want // 16px default browser phone = 62.5%
     font-family: 'Satoshi', sans-serif;
+}
+
+body {
+  background-color: #1e1e1e1e;
 }
 
 .btn {

@@ -96,12 +96,14 @@
     display: flex;
     position: relative;
     margin-bottom: 2rem;
+
     img {
         position: absolute;
         right: 1rem;
         top: 1.5rem;
         width: 2rem;
         height: 2rem;
+        cursor: pointer;
     }
 }
 
@@ -109,16 +111,29 @@
     width: 100%;
     color: var(--color-gray-3);
     font-size: 1.4rem;
+    @media screen and (max-width: $bp-medium) {
+        margin-top: 4rem;
+    }
     &__text {
         display: flex;
         justify-content: space-evenly;
         font-size: inherit;
+
+
+        @media screen and (max-width: $bp-medium) {
+            justify-content: center;
+        }
     }
 
     &__link {
         text-decoration: none;
         color: var(--color-gray-3);
+        @media screen and (max-width: $bp-medium) {
+            margin-right: 1rem;
+            margin-left: 1rem;
+        }
     }
+
 }
 
 .signin {
