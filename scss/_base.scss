@@ -1,0 +1,36 @@
+/**
+*
+*/
+
+
+:root {
+    --color-gray-1: #333333;
+    --color-gray-2: #4f4f4f;
+    --color-gray-3: #828282;
+    --color-gray-4: #bdbdbd;
+    --color-gray-5: #e0e0e0;
+    --color-gray-6: #f2f2f2;
+    --color-gray-7: #f8f8f8;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+  }
+  *,
+  *:after,
+  *::before {
+    box-sizing: inherit;
+  }
+
+  @font-face {
+    font-family: 'EditorNew';
+    src: url('../fonts/PPEditorialNew-Regular.otf');
+  }
+
+  html {
+    box-sizing: border-box;
+    font-size: 62.5%; //1rem = 10px; 10px we want // 16px default browser phone = 62.5%
+    font-family: 'Satoshi', sans-serif;
+}

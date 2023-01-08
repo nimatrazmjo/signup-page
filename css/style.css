@@ -1,0 +1,97 @@
+/**
+*
+*/
+:root {
+  --color-gray-1: #333333;
+  --color-gray-2: #4f4f4f;
+  --color-gray-3: #828282;
+  --color-gray-4: #bdbdbd;
+  --color-gray-5: #e0e0e0;
+  --color-gray-6: #f2f2f2;
+  --color-gray-7: #f8f8f8;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+*,
+*:after,
+*::before {
+  box-sizing: inherit;
+}
+
+@font-face {
+  font-family: "EditorNew";
+  src: url("../fonts/PPEditorialNew-Regular.otf");
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: "Satoshi", sans-serif;
+}
+
+.container {
+  margin: 3rem auto;
+  max-width: 100.6rem;
+  padding-top: 0;
+  background: var(--color-gray-7);
+  min-height: 90vh;
+  display: flex;
+}
+
+.brand {
+  background-image: url("../images/image1.svg");
+  flex: 0 0 60%;
+  background-size: cover;
+}
+.brand__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  height: 100%;
+  padding: 5rem;
+}
+
+.signup {
+  flex: 1;
+}
+
+.logo {
+  width: 10rem;
+  height: 10rem;
+  margin-bottom: auto;
+  justify-self: start;
+}
+
+.heading1 {
+  font-family: "EditorNew", sans-serif;
+  font-size: 3.8rem;
+  font-weight: 400;
+  line-height: 5.8rem;
+  color: var(--color-gray-7);
+  width: 80%;
+  margin-bottom: 5rem;
+}
+
+.slider {
+  margin-bottom: 6rem;
+  display: flex;
+}
+.slider__item {
+  width: 4rem;
+  height: 0.2rem;
+  background-color: var(--color-gray-4);
+  opacity: 0.3;
+  margin-right: 1rem;
+}
+.slider__subitem {
+  background-color: #fff;
+  width: 70%;
+  height: 100%;
+  opacity: 1;
+  display: block;
+}
+
+/*# sourceMappingURL=style.css.map */

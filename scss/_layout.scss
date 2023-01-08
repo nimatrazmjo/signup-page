@@ -1,0 +1,26 @@
+.container {
+    margin: 3rem auto;
+    max-width: 100.6rem;
+    padding-top: 0;
+    background: var(--color-gray-7);
+    min-height: 90vh;
+    display: flex;
+}
+
+.brand {
+    background-image: url('../images/image1.svg');
+    flex: 0 0  60%;
+    background-size: cover;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        height: 100%;
+        padding: 5rem;
+    }
+}
+
+.signup {
+    flex: 1;
+}
