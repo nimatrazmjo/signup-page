@@ -34,3 +34,32 @@
     font-size: 62.5%; //1rem = 10px; 10px we want // 16px default browser phone = 62.5%
     font-family: 'Satoshi', sans-serif;
 }
+
+.btn {
+    font-family: 'Satoshi', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 900;
+    line-height: 1.8rem;
+    width: 100%;
+    color: var(--color-gray-1);
+    margin-left: .5rem;
+    padding: 1rem;
+    border: 1px solid var(--color-gray-4);
+    border-radius: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all .2s;
+    &:hover {
+        background-color: var(--color-gray-4);
+    }
+}
+
+.btn--primary {
+    background-color: var(--color-gray-1);
+    color: var(--color-gray-7);
+    &:hover {
+        background-color: var(--color-gray-2);
+    }
+}
